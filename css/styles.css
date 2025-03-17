@@ -1,4 +1,4 @@
-/* Basic style */
+/* Basic styles */
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -10,198 +10,150 @@ body {
     padding: 0;
 }
 
+/* Normalization */
+img {
+    display: block;
+}
+
 /* Container */
 .container {
-    width: 1200px;
+    width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
 /* Header */
-header {
+.header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
 }
 
-nav ul {
-    list-style: none;
+/* Navigation */
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 76px;
+    text-decoration: none;
+    color: #2e2f42;
+    font-weight: 700;
+}
+
+.menu {
     display: flex;
     gap: 40px;
+    list-style: none;
     padding: 0;
     margin: 0;
 }
 
-nav a {
+.menu-link {
     text-decoration: none;
     color: #2e2f42;
     font-weight: 500;
+    padding: 24px 0;
     transition: color 0.3s ease;
 }
 
-nav a:hover,
-nav a:focus {
+.menu-link:hover,
+.menu-link:focus {
     color: #404bbf;
 }
 
 /* Contacts */
-address ul {
+.contact-list {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-address a {
+.contact-link {
     text-decoration: none;
     color: #434455;
     transition: color 0.3s ease;
 }
 
-address a:hover,
-address a:focus {
+.contact-link:hover,
+.contact-link:focus {
     color: #404bbf;
 }
 
-/* Titles */
-h1 {
+/* Hero Section */
+.hero {
+    padding: 188px 0;
+    text-align: center;
+}
+
+.hero-title {
+    max-width: 496px;
+    margin: 0 auto 20px;
     font-size: 56px;
     font-weight: 700;
-    text-align: center;
     color: #2e2f42;
-    margin-bottom: 20px;
 }
 
-h2 {
-    font-size: 36px;
-    font-weight: 700;
-    text-align: center;
-    color: #2e2f42;
-    margin-bottom: 40px;
-}
-
-/* Button */
-button {
+.hero-button {
     display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    background-color: #4d5ae5;
-    color: #ffffff;
+    min-width: 169px;
+    height: 56px;
     border: none;
-    border-radius: 5px;
+    background-color: #4d5ae5;
+    border-radius: 4px;
     cursor: pointer;
+    color: white;
     font-size: 18px;
     font-weight: 500;
-    transition: background-color 0.3s ease;
+    margin: 0 auto;
 }
 
-button:hover,
-button:focus {
+.hero-button:hover,
+.hero-button:focus {
     background-color: #404bbf;
 }
 
-/* Features Section */
-.features ul {
-    list-style: none;
+/* Features */
+.features {
+    padding: 120px 0;
+}
+
+.features-list {
     display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
-}
-
-.features li {
-    width: 250px;
-}
-
-/* Out team Section" */
-.team {
-    background-color: #f4f4fd;
-    padding: 40px 0;
-    text-align: center;
-}
-
-.team ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
-}
-
-.team li {
-    width: 264px;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Portfolio Section" */
-.portfolio {
-    padding: 60px 0;
-}
-
-.portfolio-title {
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    color: #2e2f42;
-    margin-bottom: 40px;
-}
-
-.portfolio-list {
-    display: flex;
-    flex-wrap: wrap;
     gap: 24px;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
-.portfolio-item {
-    width: 360px;
-    background-color: #ffffff;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.features-item {
+    width: calc((100% - 72px) / 4);
 }
 
-.portfolio-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
-}
-
-.portfolio-item img {
-    width: 100%;
-    display: block;
-}
-
-.portfolio-info {
-    padding: 20px;
-    text-align: center;
-}
-
-.portfolio-info h3 {
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    color: #2e2f42;
-}
-
-.portfolio-info p {
-    font-size: 16px;
-    color: #434455;
+.features-title {
+    margin-bottom: 8px;
 }
 
 /* Footer */
-footer {
+.footer {
+    padding: 100px 0;
     background-color: #2e2f42;
     color: white;
     text-align: center;
-    padding: 20px 0;
+}
+
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-text {
+    max-width: 264px;
+    margin: 0 auto;
 }
