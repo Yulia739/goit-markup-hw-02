@@ -1,159 +1,200 @@
-/* Basic styles */
-body {
+/* ========== GLOBAL STYLES ========== */
+
+:root {
+    --color-primary: #4d5ae5;
+    --color-primary-hover: #404bbf;
+    --color-dark: #2e2f42;
+    --color-text: #434455;
+    --color-bg-light: #f4f4fd;
+    --color-white: #ffffff;
+      
+  }
+  
+  body {
     font-family: "Roboto", sans-serif;
+    color: var(--color-text);
+    background-color: var(--color-white);
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /* ========== COMPONENTS ========== */
+  
+  .section-title {
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--color-dark);
+  }
+
+  .main-title {
+    color: var(--color-white);
+    font-size: 56px;
+    line-height: 1.07;
+    text-transform: none;
+  }
+  
+  .card-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--color-dark);
+  }
+  
+  .card-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    color: #434455;
-    background-color: #ffffff;
-    margin: 0;
-    padding: 0;
-}
-
-/* Normalization */
-img {
-    display: block;
-}
-
-/* Container */
-.container {
-    width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-/* Header */
-.header {
-    border-bottom: 1px solid #e7e9fc;
-}
-
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Navigation */
-.nav {
-    display: flex;
-    align-items: center;
-}
-
-.logo {
-    margin-right: 76px;
-    text-decoration: none;
-    color: #2e2f42;
+    letter-spacing: 0.02em;
+    color: var(--color-text);
+  }
+  
+  .card-text--light {
+    color: var(--color-bg-light);
+  }
+  
+  /* ========== HEADER ========== */
+  
+  .header {
+    background-color: var(--color-white);
+  }
+  
+  .logo {
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
-}
-
-.menu {
-    display: flex;
-    gap: 40px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.menu-link {
-    text-decoration: none;
-    color: #2e2f42;
-    font-weight: 500;
-    padding: 24px 0;
-    transition: color 0.3s ease;
-}
-
-.menu-link:hover,
-.menu-link:focus {
-    color: #404bbf;
-}
-
-/* Contacts */
-.contact-list {
-    display: flex;
-    gap: 40px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.contact-link {
-    text-decoration: none;
-    color: #434455;
-    transition: color 0.3s ease;
-}
-
-.contact-link:hover,
-.contact-link:focus {
-    color: #404bbf;
-}
-
-/* Hero Section */
-.hero {
-    padding: 188px 0;
-    text-align: center;
-}
-
-.hero-title {
-    max-width: 496px;
-    margin: 0 auto 20px;
-    font-size: 56px;
-    font-weight: 700;
-    color: #2e2f42;
-}
-
-.hero-button {
-    display: block;
-    min-width: 169px;
-    height: 56px;
-    border: none;
-    background-color: #4d5ae5;
-    border-radius: 4px;
-    cursor: pointer;
-    color: white;
     font-size: 18px;
-    font-weight: 500;
-    margin: 0 auto;
-}
-
-.hero-button:hover,
-.hero-button:focus {
-    background-color: #404bbf;
-}
-
-/* Features */
-.features {
-    padding: 120px 0;
-}
-
-.features-list {
-    display: flex;
-    gap: 24px;
-}
-
-.features-item {
-    width: calc((100% - 72px) / 4);
-}
-
-.features-title {
-    margin-bottom: 8px;
-}
-
-/* Footer */
-.footer {
-    padding: 100px 0;
-    background-color: #2e2f42;
-    color: white;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+  }
+  
+  .logo-accent {
+    color: var(--color-dark);
+  }
+  
+  .nav-link,
+  .contact-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-dark);
+  }
+  
+  .nav-link:hover,
+  .nav-link:focus,
+  .contact-link:hover,
+  .contact-link:focus {
+    color: var(--color-primary-hover);
+  }
+  
+  /* ========== HERO SECTION ========== */
+  
+  /* HERO SECTION */
+  .hero {
+    background-color: var(--color-dark);
+    text-align: center
+  }
+  
+  .main-title {
     text-align: center;
-}
-
-.footer-logo {
-    display: inline-block;
-    margin-bottom: 16px;
-    text-decoration: none;
-    color: white;
-}
-
-.footer-text {
-    max-width: 264px;
-    margin: 0 auto;
-}
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: var(--color-white); /* явно прописаний білий колір */
+  }
+  
+  
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: var(--color-white);
+  }
+  
+  .hero-btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+  }
+  
+  .hero-btn:hover,
+  .hero-btn:focus {
+    background-color: var(--color-primary-hover);
+  }
+  
+  /* ========== FEATURES SECTION ========== */
+  
+  .features-list {
+    background-color: var(--color-white);
+  }
+  
+  /* ========== TEAM SECTION ========== */
+  
+  .team {
+    background-color: var(--color-bg-light);
+  }
+  
+  .team-card {
+    background-color: var(--color-white);
+  }
+  
+  /* ========== FOOTER ========== */
+  
+  .footer {
+    background-color: var(--color-dark);
+  }
+  
+  .footer .logo-accent {
+    color: var(--color-bg-light);
+  }
+  
+  .footer-text {
+    color: var(--color-bg-light);
+  }
+  
+  /* ========== PORTFOLIO SECTION ========== */
+  
+  .filter-btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    background-color: var(--color-bg-light);
+    color: var(--color-primary);
+  }
+  
+  .filter-btn:hover,
+  .filter-btn:focus {
+    background-color: var(--color-primary-hover);
+    color: var(--color-white);
+  }
+  
+  /* ========== UTILITY CLASSES ========== */
+  
+  .hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  
